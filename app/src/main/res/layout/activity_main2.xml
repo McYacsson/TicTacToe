@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tttimages"
+    tools:context="com.user.tictactoe.Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/statistics_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fdff7801">
+
+        <TextView
+            android:id="@+id/dislayForXPlayer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@color/colorPrimary"
+            android:textSize="46sp" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dislayFor0Player"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@color/colorPrimary"
+            android:textSize="46sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/moveTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statistics_table"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Player :  "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moveTextView"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp"
+
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="@string/makeMove"
+                android:text="@string/empty"
+                android:textSize="36sp" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
